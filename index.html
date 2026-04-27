@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4</title>
+    <!--  link css-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- link font awwesom (icon)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="bg-green-700 body-font shadow-md">
+        <div class="container mx-auto flex flex-wrap p-5 items-center justify-between">
+            <a class="flex title-font font-medium items-center text-white gap-2">
+                <i class="fa-solid fa-seedling text-green-300"></i>
+                <span class="text-xl">Tailblocks</span>
+            </a>
+            <label for="menu-toggle" class="md:hidden text-2xl cursor-pointer">
+                ☰
+            </label>
+            <!-- CHECKBOX -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+            <!-- MENU -->
+            <nav class="w-full hidden text-white peer-checked:flex flex-col items-start px-4
+                md:flex md:flex-row md:w-auto md:mx-auto mt-4 md:mt-0">
+                <a class="mb-2 md:mb-0 md:mx-4 hover:text-green-400" href="index.html">Home</a>
+                <a class="mb-2 md:mb-0 md:mx-4 hover:text-green-400" href="#shop">Products</a>
+                <a class="mb-2 md:mb-0 md:mx-4 hover:text-green-400" href="#plants">Plants Care</a>
+                <a class="mb-2 md:mb-0 md:mx-4 hover:text-green-400" href="#about">About</a>
+                <a class="mb-2 md:mb-0 md:mx-4 hover:text-green-400" href="contact.html ">Contact</a>
+            </nav>
+            <div class="flex justify-center gap-4">
+                <i class="fa-regular fa-heart text-white"></i>
+                <i class="fa-solid fa-envelope text-white"></i>
+                <i class="fa-solid fa-user text-white"></i>
+            </div>
+        </div>
+    </header>
+    <!-- HERO -->
+    <section class="hero text-white overflow-hidden">
+        <div class="container mx-auto flex px-6 pt-20 md:flex-row flex-col items-center">
+            <!-- TEXT -->
+            <div class="md:w-1/2 flex flex-col items-start text-left py-10 md:py-20">
+                <h1 class="font-serif text-3xl md:text-5xl font-bold mb-4">
+                    Bring The Nature <br> Close To You
+                </h1>
+                <p class="mb-6 text-gray-200">
+                    Discover a wide variety of plants that make your home fresher and more beautiful.
+                </p>
+                <a href="#shop" class="btn bg-orange-400 text-white px-6 py-3 rounded-full font-semibold 
+                        flex items-center gap-2 hover:bg-orange-500 transition">Shop Now
+                    <span
+                        class="btn bg-white text-orange-400 rounded-full w-6 h-6 flex items-center justify-center text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-4 font-bold">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <!-- IMAGE -->
+            <div class="md:w-1/2 flex justify-center items-end">
+                <div class="card">
+                    <div class="badge text-center">
+                        Mulai
+                        <br>
+                        $5
+                    </div>
+                    <img src="img/tanaman.png" alt="tanaman" class="w-48 md:w-72">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="bg-gray-900 text-white body-font">
+        <div class="container px-5 py-16 mx-auto">
+            <div class="flex flex-wrap">
+                <div class="p-3 md:w-1/3 flex items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-white-500" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 21c10 0 14-6 14-14-8 0-14 4-14 14z" />
+                    </svg>
+                    <div class="pl-4">
+                        <h2 class="text-lg font-semibold mb-2">Fast Growth</h2>
+                        <p class="text-gray-300">
+                            Tanaman cepat tumbuh dan mudah dirawat untuk pemula.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-white-500" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" storke-width="2"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                    </svg>
+                    <div class="pl-6">
+                        <h2 class="text-lg font-semibold mb-2">Healthy Plants</h2>
+                        <p class="text-gray-300">
+                            Kami menyediakan tanaman sehat dan berkualitas tinggi.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-white-500" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+                    <div class="pl-6">
+                        <h2 class="text-lg font-semibold mb-2">Expert Care</h2>
+                        <p class="text-gray-300">
+                            Tips dan panduan dari ahli untuk merawat tanamanmu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-10">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 px-4">
+            <!-- Card 1 -->
+            <div
+                class="bg-gray-300 rounded-2xl p-6 flex items-center justify-between transition-all duration-300 hover:-translate-y-2 hover:shadow-2x1 hover:scale-105 cursor-pointer">
+                <div>
+                    <p class="text-sm text-gray-550">Big Sale Products</p>
+                    <h2 class="text-2xl font-bold text-gray-800">Indoor Plants</h2>
+                    <p class="text-gray-400 mt-2">More Info</p>
+                </div>
+                <img src="img/gambar-kaktus.png" alt="plant" class="w-48 h-48">
+            </div>
+            <!-- Card 2 -->
+            <div
+                class="bg-gray-300 rounded-2xl p-6 flex items-center justify-between transition-all duration-300 hover:-translate-y-2 hover:shadow-2x1 hover:scale-105 cursor-pointer">
+                <div>
+                    <p class="text-sm text-gray-500">Top Products</p>
+                    <h2 class="text-2xl font-bold text-gray-800">Herbal Plants</h2>
+                    <p class="text-gray-400 mt-2">More Info</p>
+                </div>
+                <img src="img/gambar-tanaman-1.png" alt="plant" class="w-38 h-48">
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="max-w-5xl mx-auto py-12 px-4" id="shop">
+        <!-- JUDUL -->
+        <div class="text-center">
+            <h1 class="font-serif text-3xl font-bold text-green-900">Our Products</h1>
+            <div class="w-16 h-1 bg-green-500 mx-auto mt-2"></div>
+        </div>
+        <!-- BUTTON -->
+        <div class="flex justify-center gap-2 mt-5 flex-wrap">
+            <button onclick="filterProduct('all', this)"
+                class="btn px-4 py-1.5 bg-green-700 text-white rounded-full text-sm">
+                All Plants
+            </button>
+            <button onclick="filterProduct('outdoor', this)"
+                class="btn px-4 py-1.5 border border-gray-300 rounded-full text-sm">
+                Outdoor Plants
+            </button>
+            <button onclick="filterProduct('custom', this)"
+                class="btn px-4 py-1.5 border border-gray-300 rounded-full text-sm">
+                Customized Gardens
+            </button>
+        </div>
+        <!-- GRID -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+            <!-- CARD -->
+            <div class="kartu indoor group bg-gray-200 p-2 rounded-lg 
+                flex flex-col items-center text-center
+                hover:bg-green-100 hover:-translate-y-1 hover:shadow-lg 
+                transition duration-300">
+                <div class="w-30 h-30 flex items-center justify-center mb-1">
+                    <img src="img/gambar-1.png"
+                        class="max-w-full max-h-full object-contain transition group-hover:scale-110">
+                </div>
+                <br>
+                <h3 class="text-sm font-medium text-gray-700 group-hover:text-green-700">
+                    Fiddle Leaf
+                </h3>
+                <p class="text-xs text-gray-500">$14.00</p>
+            </div>
+            <!-- CARD -->
+            <div class="kartu outdoor group bg-gray-200 p-2 rounded-lg 
+                flex flex-col items-center text-center
+                hover:bg-green-100 hover:-translate-y-1 hover:shadow-lg 
+                transition duration-300">
+                <div class="w-30 h-30 flex items-center justify-center mb-1">
+                    <img src="img/gambar-tanaman-1.png"
+                        class="max-w-full max-h-full object-contain transition group-hover:scale-110">
+                </div>
+                <br>
+                <h3 class="text-sm font-medium text-gray-700 group-hover:text-green-700">
+                    Outdoor Plant
+                </h3>
+                <p class="text-xs text-gray-500">$14.00</p>
+            </div>
+            <!-- CARD -->
+            <div class="kartu outdoor group bg-gray-200 p-2 rounded-lg 
+                flex flex-col items-center text-center
+                hover:bg-green-100 hover:-translate-y-1 hover:shadow-lg 
+                transition duration-300">
+                <div class="w-30 h-30 flex items-center justify-center mb-1">
+                    <img src="img/gambar-5.png"
+                        class="max-w-full max-h-full object-contain transition group-hover:scale-110">
+                </div>
+                <br>
+                <h3 class="text-sm font-medium text-gray-700 group-hover:text-green-700">
+                    Garden Plant
+                </h3>
+                <p class="text-xs text-gray-500">$14.00</p>
+            </div>
+            <!-- CARD -->
+            <div class="kartu custom group bg-gray-200 p-2 rounded-lg 
+                flex flex-col items-center text-center
+                hover:bg-green-100 hover:-translate-y-1 hover:shadow-lg 
+                transition duration-300">
+                <div class="w-30 h-30 flex items-center justify-center mb-1">
+                    <img src="img/gambar-6.png"
+                        class="max-w-full max-h-full object-contain transition group-hover:scale-110">
+                </div>
+                <br>
+                <h3 class="text-sm font-medium text-gray-700 group-hover:text-green-700">
+                    Custom Garden
+                </h3>
+                <p class="text-xs text-gray-500">$20.00</p>
+            </div>
+            <!-- CARD -->
+            <div class="kartu custom group bg-gray-200 p-2 rounded-lg 
+                flex flex-col items-center text-center
+                hover:bg-green-100 hover:-translate-y-1 hover:shadow-lg 
+                transition duration-300">
+                <div class="w-30 h-30 flex items-center justify-center mb-1">
+                    <img src="img/gambar-3.png"
+                        class="max-w-full max-h-full object-contain transition group-hover:scale-110">
+                </div>
+                <br>
+                <h3 class="text-sm font-medium text-gray-700 group-hover:text-green-700">
+                    Custom plants
+                </h3>
+                <p class="text-xs text-gray-500">$18.00</p>
+            </div>
+            <!-- CARD -->
+            <div class="kartu custom group bg-gray-200 p-2 rounded-lg 
+                flex flex-col items-center text-center
+                hover:bg-green-100 hover:-translate-y-1 hover:shadow-lg 
+                transition duration-300">
+                <div class="w-30 h-30 flex items-center justify-center mb-1">
+                    <img src="img/gambar-4.png"
+                        class="max-w-full max-h-full object-contain transition group-hover:scale-110">
+                </div>
+                <br>
+                <h3 class="text-sm font-medium text-gray-700 group-hover:text-green-700">
+                    Mini Garden
+                </h3>
+                <p class="text-xs text-gray-500">$18.00</p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gradient-to-r from-green-900 to-green-800 text-white py-20">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 items-center gap-4">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-serif font-bold leading-tight">
+                    Grow Plant For <br> A Better Life
+                </h1>
+            </div>
+            <div class="relative flex justify-center items-center mt-10 md:mt-0">
+                <div class="w-28 h-28 md:w-56 md:h-56 bg-white rounded-full flex items-center justify-center shadow-xl">
+                    <img src="img/gambar-5.png" class="w-24 h-24 md:w-52 md:h-52 object-contain">
+                </div>
+                <div class="absolute 
+                    w-16 h-16 md:w-36 md:h-36
+                    left-2 md:-left-12
+                    bottom-0
+                    bg-white rounded-full border-4 border-green-800 
+                    flex items-center justify-center shadow-lg">
+                    <img src="img/gambar-7.png" class="w-12 h-12 md:w-28 md:h-28 object-contain">
+                </div>
+            </div>
+            <div>
+                <p class="text-gray-200 mb-6">
+                    Growing plants indoors not only adds aesthetics but also
+                    enhances air quality, making a more relaxing environment.
+                </p>
+                <a href="#shop" class="btn w-40 bg-orange-400 text-white px-6 py-3 rounded-full font-semibold 
+                        flex items-center gap-2 hover:bg-orange-500 transition">Shop Now
+                    <span
+                        class="btn bg-white text-orange-400 rounded-full w-6 h-6 flex items-center justify-center text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-4 font-bold">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-600 body-font" id="plants">
+        <div class="container px-5 py-20 mx-auto">
+            <div class="text-center mb-20">
+                <h1 class="sm:text-3xl text-2xl font-serif font-semibold title-font text-green-900 mb-4">Steps to start
+                    taking care of your plants
+                </h1>
+                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+                    Simple steps to help your plants grow healthy and beautiful.
+                </p>
+            </div>
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-2 md:space-y-0 space-y-6">
+                <div class="p-4 md:w-1/3 flex flex-col text-center items-center 
+                            hover:scale-105 transition duration-300">
+                    <div class="w-16 h-16 inline-flex items-center justify-center rounded-full 
+                                bg-green-700 text-white mb-5 shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-8 font-bold">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg font-semibold mb-3">Humidity Control</h2>
+                        <p class="text-gray-500">
+                            Maintain proper humidity to keep your plants fresh and healthy.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex flex-col text-center items-center 
+                            hover:scale-105 transition duration-300">
+                    <div class="w-16 h-16 inline-flex items-center justify-center rounded-full 
+                bg-green-700 text-white mb-5 shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-10 h-10">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 4v16m8-8H4m3-5l-2 2m14-2l2 2m-2 10l2-2M7 17l-2 2" />
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg font-semibold mb-3">Pest Control</h2>
+                        <p class="text-gray-500">
+                            Protect your plants from pests to ensure healthy growth.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex flex-col text-center items-center 
+                            hover:scale-105 transition duration-300">
+                    <div class="w-16 h-16 inline-flex items-center justify-center rounded-full 
+                bg-green-700 text-white mb-5 shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m7.848 8.25 1.536.887M7.848 8.25a3 3 0 1 1-5.196-3 3 3 0 0 1 5.196 3Zm1.536.887a2.165 2.165 0 0 1 1.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 1 1-5.196 3 3 3 0 0 1 5.196-3Zm1.536-.887a2.165 2.165 0 0 0 1.083-1.838c.005-.352.054-.695.14-1.025m-1.223 2.863 2.077-1.199m0-3.328a4.323 4.323 0 0 1 2.068-1.379l5.325-1.628a4.5 4.5 0 0 1 2.48-.044l.803.215-7.794 4.5m-2.882-1.664A4.33 4.33 0 0 0 10.607 12m3.736 0 7.794 4.5-.802.215a4.5 4.5 0 0 1-2.48-.043l-5.326-1.629a4.324 4.324 0 0 1-2.068-1.379M14.343 12l-2.882 1.664" />
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg font-semibold mb-3">Pruning Weeds</h2>
+                        <p class="text-gray-500">
+                            Trim and remove weeds to help your plants grow better.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="flex justify-center" id="about">
+        <div class="p-4 w-full lg:w-5/7 xl:w-[80%]">
+            <div
+                class="flex items-start bg-gray-300 border-2 border-gray-200 rounded-xl overflow-hidden shadow-md h-80">
+                <!-- Gambar -->
+                <img class="w-2/5 h-full object-cover object-center"
+                    src="https://i.pinimg.com/736x/9b/0e/43/9b0e434059a089e648e25c9eab31b1dc.jpg" alt="blog">
+                <!-- Konten -->
+                <div class="p-6 w-3/5">
+                    <h2 class="text-xl font-medium text-gray-700 mb-1">About Us</h2>
+                    <h1 class="text-3xl font-sans font-bold text-green-900 mb-3">Cara Menumbuhkan Tanaman Lebih Sehat
+                        dan Subur
+                    </h1>
+                    <p class="leading-relaxed mb-3">
+                        Pelajari cara sederhana dan efektif untuk merawat tanaman agar tumbuh lebih sehat setiap hari.
+                        Kami menyediakan tips, panduan, dan inspirasi agar tamanmu terlihat lebih hijau, segar, dan
+                        indah.
+                    </p>
+                    <button class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold 
+                    flex items-center gap-2 hover:bg-green-500 transition">
+                        Learn more
+                        <span class="bg-white text-black rounded-full w-6 h-6 flex items-center justify-center text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-4 font-bold">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <section class="bg-gray-200 body-font">
+        <div class="container px-5 py-20 mx-auto">
+            <h3 class="sm:text-3xl text-2xl font-bold title-font font-serif text-center text-green-900 mb-5">Follow
+                us on Instagram
+            </h3>
+            <p class="text-gray-500 text-center mb-15">Ikuti kami di Instagram untuk melihat koleksi tanaman yang indah.
+            </p>
+            <br class="hidden sm:block">
+            </h1>
+            <div class="flex flex-wrap -m-4">
+                <!-- CARD 1 -->
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded-xl overflow-hidden group">
+                        <img class="object-cover object-center w-full h-full transition duration-500 group-hover:scale-110"
+                            src="https://i.pinimg.com/1200x/72/46/ae/7246aea9497e2d39e06b116858eebfc1.jpg">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition duration-500">
+                        </div>
+                    </a>
+                </div>
+                <!-- CARD 2 -->
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded-xl overflow-hidden group">
+                        <img class="object-cover object-center w-full h-full transition duration-500 group-hover:scale-110"
+                            src="https://i.pinimg.com/1200x/d2/78/d8/d278d83bc375e95e3bbb616a163e7da4.jpg">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition duration-500">
+                        </div>
+                    </a>
+                </div>
+                <!-- CARD 3 -->
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded-xl overflow-hidden group">
+                        <img class="object-cover object-center w-full h-full transition duration-500 group-hover:scale-110"
+                            src="https://i.pinimg.com/736x/4d/69/86/4d6986e077d6b534bbbb6975e100baca.jpg">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition duration-500">
+                        </div>
+                    </a>
+                </div>
+                <!-- CARD 4 -->
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded-xl overflow-hidden group">
+                        <img class="object-cover object-center w-full h-full transition duration-500 group-hover:scale-110"
+                            src="https://i.pinimg.com/1200x/57/99/22/579922032e3aefe19ffe9a1e0a4bff67.jpg">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition duration-500">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-green-900 text-green-100 pt-12 pb-6">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <h2 class="text-lg md:text-xl font-semibold mb-4">
+                    Stay In The Loop With Special Offers,<br>
+                    Plant Parenting Tips, & More.
+                </h2>
+                <div class="flex justify-center items-center max-w-md mx-auto">
+                    <input type="email" placeholder="Email"
+                        class="w-full px-4 py-2 bg-green-800 text-white placeholder-green-300 outline-none">
+                    <button class="bg-orange-400 px-4 py-2 hover:bg-orange-500">
+                        <i class="fa-solid fa-paper-plane text-white"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="border-t border-green-700 my-8"></div>
+            <div class="grid md:grid-cols-3 gap-8 text-sm">
+                <div>
+                    <h3 class="font-semibold mb-3">Address</h3>
+                    <p>123 Green Street<br>NYC, USA</p>
+                    <h3 class="font-semibold mt-4 mb-2">Contact</h3>
+                    <p>+123456789<br>plants@email.com</p>
+                </div>
+                <!-- TENGAH -->
+                <div class="text-center">
+                    <h3 class="font-semibold mb-3">Plants Are Our</h3>
+                    <p class="text-green-300 mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec vel urna at sapien viverra feugiat.
+                    </p>
+                    <div class="flex justify-center gap-4">
+                        <i class="fa-brands fa-facebook text-white"></i>
+                        <i class="fa-brands fa-youtube text-white"></i>
+                        <i class="fa-brands fa-instagram text-white"></i>
+                    </div>
+                </div>
+                <!-- KANAN -->
+                <div class="text-right">
+                    <h3 class="font-semibold mb-3">Pages</h3>
+                    <ul class="space-y-1">
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>About</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- GARIS -->
+            <div class="border-t border-green-700 my-8"></div>
+            <!-- BOTTOM -->
+            <div class="text-center text-xs text-green-400">
+                © 2024 Plant Store | All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
